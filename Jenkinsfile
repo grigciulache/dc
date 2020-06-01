@@ -11,7 +11,7 @@ pipeline{
                 steps{
                     echo 'test bild'
                     script {
-                            powershell label: '', script: 'docker-compose up'
+                            powershell label: '', script: 'docker-compose up -d'
                     }
                 }
             }
